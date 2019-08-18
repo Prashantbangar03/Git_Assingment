@@ -1,0 +1,14 @@
+--force overwrites a remote branch with your local branch.
+
+--force-with-lease is a safer option that will not overwrite any work on the remote branch.
+
+use of =>
+--force when you want overwrites a remote branch with your local branch.
+-- force-with-lease when you dont want to overwrite local branch with remote.
+
+scenario --force-with-lease is
+        if more commits were added to the remote branch (by another team-member or coworker or what have you). It ensures you do not overwrite someone elses work by force pushing.
+
+Force with lease gives you the flexibility to override new commits on your remote branch, whilst protecting your old commit history:
+If you rebased and squashed/edited/created new commits, you will be able to update the remote branch.
+If new commits are added to the remote branch (by some team member), this command would not update the remote branch (and not overwrite any work).

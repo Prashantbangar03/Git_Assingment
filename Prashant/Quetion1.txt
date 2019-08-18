@@ -1,0 +1,10 @@
+Cherry-pick is "apply the changes introduced by some existing commit.” 
+
+use case =>
+    the ability to git cherry-pick a commit can be extremely helpful in fixing bugs and resolving problems in GitHub.
+
+Steps to do =>
+
+git log
+git checkout new_branch
+git cherry-pick <hash of commit>

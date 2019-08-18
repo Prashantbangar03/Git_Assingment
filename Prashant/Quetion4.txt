@@ -1,0 +1,3 @@
+Using Rebase:
+
+    git rebase --onto <branch name>~<first commit number to remove> <branch name>~<first commit to be kept> <branch name>

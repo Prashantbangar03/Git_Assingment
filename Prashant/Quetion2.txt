@@ -1,0 +1,22 @@
+To begin, rename your current remote (most likely named origin) to a different name. I'd rename this to the name of the service you are using, such as github or bitbucket.
+
+git remote rename origin github
+
+You can then add the remote for your second remote repository, in this case, a BitBucket repository.
+
+git remote add bitbucket
+
+ git@bitbucket.org:username/example.git
+
+Afterwards, you'll want to set up your origin remote to push to both of these. Issue the following command:
+
+git config -e
+
+You can then push to both repositories by issuing:
+
+git push origin master
+
+Or to a single one by issuing either of these commands:
+
+git push github master
+git push bitbucket master
